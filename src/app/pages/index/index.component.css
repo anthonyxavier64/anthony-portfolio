@@ -1,0 +1,157 @@
+.banner {
+    box-shadow: 0 0 10px 0;
+    padding: 1% 5% 1% 5%;
+    background-color: white;
+    width: 100%;
+    color: #000080;
+    margin-bottom: 2%;
+}
+
+h1 {
+    font-family: "Helvetica Neue", "Helvetica";
+    font-weight: 200;
+}
+
+section {
+    color: #000080;
+    padding-top: 5%;
+}
+
+section h3   {
+    font-family: "Helvetica Neue", "Helvetica";
+    font-weight: 200;
+    text-decoration: underline;
+    margin-top: 2%;
+}
+
+section p {
+    font-family: "Helvetica Neue", "Helvetica";
+    font-weight: 200;
+    width: 50%;
+    line-height: 1.5;
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+.h5-with-weight {
+    font-weight: 200;
+    margin-top: 2%;
+}
+
+span {
+    font-weight: 200;
+}
+
+li:not(:last-child) {
+    margin-bottom: 2%;
+}
+
+li {
+    font-family: "Helvetica Neue", "Helvetica";
+    font-weight: 300;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.timeline-container {
+    max-width: 500px;
+    margin-left: 40%;
+    margin-top: 5%;
+    border-left: 4px solid #222;
+    padding-left: 3%;
+}
+
+.timeline-container h2 {
+    margin: 0;
+    border-bottom: 1px solid #eee;
+}
+
+.timeline-container .event {
+    box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    margin: 48px 0;
+    line-height: 2;
+    position: relative;
+}
+
+.timeline-container .event::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 2px solid #000;
+    position: absolute;
+    left: -54px;
+    border-radius: 50%;
+}
+
+mgl-timeline-entry-header {
+    cursor: pointer;
+}
+
+#nus-data {
+    font-family: "Helvetica Neue", "Helvetica";
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: center;
+}
+
+mgl-timeline-entry-content h6 {
+    font-family: "Helvetica Neue", "Helvetica";
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+mgl-timeline-entry-content li {
+    font-size: 15px;
+}
+
+mgl-timeline-entry-content ul {
+    margin-top: 10px;
+    margin-left: 180px;
+}
+
+#cj-cca {
+    font-family: "Helvetica Neue", "Helvetica";
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.skills-header {
+    font-family: "Helvetica Neue", "Helvetica";
+    font-weight: 200;
+    margin-top: 20px;
+    color: white;
+}
+
+.skills-rating {
+    font-family: "Helvetica Neue", "Helvetica";
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+    text-align: justify;
+    margin-left: 150px;
+}
+
+.dot-filled {
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-unfilled {
+    height: 15px;
+    width: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+}
