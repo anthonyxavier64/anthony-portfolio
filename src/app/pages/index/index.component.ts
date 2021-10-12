@@ -23,11 +23,11 @@ export class IndexComponent implements OnInit {
   }
 
   handleDownloadResume() {
-    window.open("https://firebasestorage.googleapis.com/v0/b/anthony-portfolio-d41e3.appspot.com/o/Resume_Anthony%20Xavier%20Poh%20TIanci.pdf?alt=media&token=bc3676bf-71e1-4d40-89aa-a307cad84943", "_blank");
+    window.open("https://firebasestorage.googleapis.com/v0/b/anthony-portfolio-d41e3.appspot.com/o/Resume_Anthony%20Xavier%20Poh%20Tianci.pdf?alt=media&token=3e15abfb-9ded-479a-94a7-e1f0bf9e4690", "_blank");
   }
 
   handleKollabpalTestimonial() {
-    window.open("https://firebasestorage.googleapis.com/v0/b/anthony-portfolio-d41e3.appspot.com/o/Kollabpal%20testimonial_Anthony%20Xavier%20Poh%20Tianci.pdf?alt=media&token=b7eb7553-816d-4a93-b395-2337e68a2e26", "_blank");
+    window.open("https://firebasestorage.googleapis.com/v0/b/anthony-portfolio-d41e3.appspot.com/o/Kollabpal%20testimonial_Anthony%20Xavier%20Poh%20Tianci.pdf?alt=media&token=403c9882-fccc-48c1-85fa-0a4e88ff940f", "_blank");
   }
 
   handleHackAndRoll() {
