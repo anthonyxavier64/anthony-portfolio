@@ -155,3 +155,52 @@ mgl-timeline-entry-content ul {
     border-radius: 50%;
     display: inline-block;
 }
+
+@media screen and (min-width: 1024px) {
+    .desktop { 
+        display: block;
+        height: 100%;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        height: 100%;
+    }
+
+    section p {
+        width: 100%;
+    }
+
+    mgl-timeline-entry-content ul {
+        margin-top: 10px;
+        margin-left: 30px;
+    }    
+
+    .skills-header {
+        font-family: "Helvetica Neue", "Helvetica";
+        font-weight: 200;
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    .skills-rating {
+        font-family: "Helvetica Neue", "Helvetica";
+        font-weight: 200;
+        font-size: 18px;
+        margin-top: 20px;
+        color: white;
+        position: absolute;
+        padding-right: 100px;
+    }
+}

@@ -1,625 +1,1183 @@
-<div style="position: fixed; top: 0px; z-index: 1;" class="banner">
-    <div fxLayout="row" fxLayoutGap="20%" fxLayoutAlign=" center">
-        <a style="white-space: nowrap" (click)="scrollIntoView('experience')">Experience & Projects</a>
-        <a (click)="scrollIntoView('contributions')">Clubs & Societies</a>
-        <a (click)="scrollIntoView('education')">Education</a>
-        <a (click)="scrollIntoView('skills')">Skillsets</a>
+<div class="desktop">
+    <div style="position: fixed; top: 0px; z-index: 1;" class="banner">
+        <div fxLayout="row" fxLayoutGap="20%" fxLayoutAlign=" center">
+            <a style="white-space: nowrap" (click)="scrollIntoView('experience')">Experience & Projects</a>
+            <a (click)="scrollIntoView('contributions')">Clubs & Societies</a>
+            <a (click)="scrollIntoView('education')">Education</a>
+            <a (click)="scrollIntoView('skills')">Skillsets</a>
+        </div>
     </div>
+
+    <section fxLayout fxLayoutAlign="center center" style="height: 100%; background-image: url(../../../assets/pictures/bg.gif); background-size: cover;">
+        <div style="width: 50%; height: 70%; background-color: rgba(0,0,0,0.6); position: relative;">
+            <div fxLayout="row">
+                <img src="../../../assets/pictures/profile.jpg" style="position: absolute; width: 40%; height: 100%; object-fit: cover;"/>
+                <div fxLayout="column" style="margin-left: 40%; color: white; padding: 5% 5% 10% 5%">
+                    <h2>Anthony Xavier Poh</h2>
+                    <h5 class="h5-with-weight">Information Systems undergraduate at National University of Singapore</h5>
+                    <h5 style="margin-top: 10%;">Phone:</h5>
+                    <h5 class="h5-with-weight">+65 9128 9981</h5>
+                    <h5 style="margin-top: 6%;">Email:</h5>
+                    <h5 class="h5-with-weight">anthonyxavier64@gmail.com</h5>
+                    <h5 style="margin-top: 6%;">Date of Birth:</h5>
+                    <h5 class="h5-with-weight">May 11th, 1998</h5>
+                    <button mat-button style="margin-top: 10%; background-color:rgba(242,241,239,0.3);" (click)="handleDownloadResume()">DOWNLOAD MY RESUME</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section fxLayout="column" fxLayoutAlign=" center" id="about">
+        <h1>Hey there, I'm Anthony.</h1>
+        <h3>Who am I</h3>
+        <p>
+            I am an undergraduate pursuing a bachelor's degree in Information Systems. My interest in Information Systems stems from
+            the ability to use technology in helping companies stay relevant in the digital age. I have a strong inclination to pick up
+            new technologies in the IT industry as they are the enablers of innovation and we can use them to work on our ideas. I have
+            worked on projects in a team setting and am always open to new projects to work on.
+        </p>
+        <h3>What I am able to offer</h3>
+        <p>
+            Being a self-driven individual, I will get tasks completed in a timely fashion. Apart from academics, I am also working
+            on my side projects such as a dropshipping store and a homemade candle business. Juggling all these together has made me
+            a disciplined individual who can get things done. Overtime I have harnessed the quality of being an independent learner.
+            I take pride in my work and thus I do my tasks meticulously. I am also approachable and form relationships with others easily.
+        </p>
+        <h3>What I am looking for</h3>
+        <p>
+            I am seeking a full-time internship at San Francisco, California, from January 2022 onwards. I am interested the domain of
+            software engineering, preferably full-stack, in a startup. Having the opportunity to work closely with the founders would 
+            be a fantastic bonus.
+        </p>
+        <button mat-flat-button style="margin-top: 2%; border: 1px solid; color: #000080" (click)="handleDownloadResume()">
+            GET MY RESUME TO LEARN MORE ABOUT ME
+        </button>
+    </section>
+
+    <section style="text-align: center;" id="experience">
+        <h1>Experience & Projects</h1>        
+        <div fxLayout="column" fxLayoutAlign="start" style="padding: 2% 25% 0 25%">
+            <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
+                <img src="../../../assets/pictures/kollabpal.png" style="height: 100px; width: 100px;"/>
+                <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
+                    <h4>2021 May - 2021 Aug</h4>
+                    <h4 style="font-weight: 200;">Kollabpal</h4>
+                    <span>Software Engineer Intern</span>
+                </div>
+            </div>
+            <div fxLayout style="padding-left: 8%; margin-top: 5%">
+                <ul>
+                    <li>Worked closely with the CTO to develop features on the frontend and backend.</li>
+                    <li>Developed features on the frontend using Vue.js framework.</li>
+                    <li>Hands on with the following AWS services: Lambda, SNS, SES, S3, CloudFormation.</li>
+                    <li>Queried from Fauna database with GraphQL.</li>
+                    <li>Create mutations and indices on Fauna.</li>
+                    <li>Developed some features of the application's chat with Twilio library.</li>
+                </ul>
+            </div>
+            <div fxLayout style="padding-left: 5%; margin-top: 5%;">
+                <span>Key takeaways:</span>
+            </div>
+            <div fxLayout style="padding-left: 5%;">
+                <p style="text-align: justify; width: 100%;">
+                    During my stint at Kollabpal, I managed to pick up many different technology by having a hands on experience.
+                    Most of the time, the CTO would explain my task to me before letting me embark on it independently.
+                    With a proper explanation, I know what is to be expected and I would complete the tasks with little further
+                    guidance. This has taught me to source for resources and documentations online when I encounter issues along
+                    doing my job. It has also aid me in picking up new technologies on my own.
+                </p>
+            </div>
+            <div style="text-align: center">
+                <button
+                    mat-flat-button 
+                    style="
+                        margin-top: 2%; 
+                        margin-left: 5%; 
+                        border: 1px solid; 
+                        color: #000080;
+                        width: 50%;
+                        " 
+                    (click)="handleKollabpalTestimonial()"
+                >
+                    TESTIMONIAL
+                </button>
+            </div>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start" style="padding: 2% 25% 0 25%">
+            <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
+                <img src="../../../assets/pictures/hackandroll.svg" style="height: 100px; width: 100px;"/>
+                <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
+                    <h4>2021 Jan</h4>
+                    <h4 style="font-weight: 200;">Hack&Roll 2021</h4>
+                    <span>Application Developer</span>
+                </div>
+            </div>
+            <div fxLayout style="padding-left: 8%; margin-top: 5%">
+                <ul>
+                    <li>Built frontend with Flutter.</li>
+                    <li>Integrated frontend with Firebase and Cloud Firestore.</li>
+                    <li>Built frontend registration page with proper authentication.</li>
+                    <li>Queried data from Cloud Firestore.</li>
+                </ul>
+            </div>
+            <div fxLayout style="padding-left: 5%; margin-top: 5%;">
+                <span>Key takeaways:</span>
+            </div>
+            <div fxLayout style="padding-left: 5%;">
+                <p style="text-align: justify; width: 100%;">
+                    Re-visit Flutter framework and gained a better understanding of doing a proper authentication.
+                </p>
+            </div>
+            <div style="text-align: center">
+                <button
+                    mat-flat-button 
+                    style="
+                        margin-top: 2%; 
+                        margin-left: 5%; 
+                        border: 1px solid; 
+                        color: #000080;
+                        width: 50%;
+                        " 
+                    (click)="handleHackAndRoll()"
+                >
+                    GITHUB REPOSITORY
+                </button>
+            </div>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start" style="padding: 2% 25% 0 25%">
+            <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
+                <img src="../../../assets/pictures/pmlogo-removebg-preview.png" style="height: 100px; width: 100px;"/>
+                <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
+                    <h4>2021 Jan - 2021 May</h4>
+                    <h4 style="font-weight: 200;">PerfectMatch</h4>
+                    <span>Full-Stack Developer</span>
+                </div>
+            </div>
+            <div fxLayout style="padding-left: 8%; margin-top: 5%">
+                <ul>
+                    <li>Worked in a team of 4.</li>
+                    <li>3-tier architecture: frontend client, backend, database.</li>
+                    <li>Built backend with J2EE.</li>
+                    <li>Built frontend with Angular.</li>
+                    <li>Queried from MySQL database using Java Persistence Query Language (JPQL).</li>
+                </ul>
+            </div>
+            <div fxLayout style="padding-left: 5%; margin-top: 5%;">
+                <span>Key takeaways:</span>
+            </div>
+            <div fxLayout style="padding-left: 5%;">
+                <p style="text-align: justify; width: 100%;">
+                    First proper experience working in a team to build a full-stack application over the course of a 4 months.
+                    Working on a multi-tier architecture has helped me to appreciate building the frontend and backend independently.
+                    This is also the first time I am working with a frontend framework, and since then, it has been easier to pick up
+                    other frontend frameworks such as Vue.js.
+                </p>
+            </div>
+            <div style="text-align: center">
+                <button
+                    mat-flat-button 
+                    style="
+                        margin-top: 2%; 
+                        margin-left: 5%; 
+                        border: 1px solid; 
+                        color: #000080;
+                        width: 50%;
+                        " 
+                    (click)="handlePMFrontend()"
+                >
+                    FRONTEND GITHUB REPOSITORY
+                </button>
+                <button
+                    mat-flat-button 
+                    style="
+                        margin-top: 2%; 
+                        margin-left: 5%; 
+                        border: 1px solid; 
+                        color: #000080;
+                        width: 50%;
+                        " 
+                    (click)="handlePMBackend()"
+                >
+                    BACKEND GITHUB REPOSITORY
+                </button>
+            </div>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start" style="padding: 2% 25% 0 25%">
+            <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
+                <img src="../../../assets/pictures/resources_lionheadhighres-removebg-preview.png" style="height: 100px; width: 100px;"/>
+                <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
+                    <h4>2020 Aug - 2020 Nov</h4>
+                    <h4 style="font-weight: 200;">Merlion Airlines</h4>
+                    <span>Backend Developer</span>
+                </div>
+            </div>
+            <div fxLayout style="padding-left: 8%; margin-top: 5%">
+                <ul>
+                    <li>Worked in a team of 2.</li>
+                    <li>Developed an application to book flights using J2EE.</li>
+                    <li>Queried from MySQL using JPQL.</li>
+                </ul>
+            </div>
+            <div fxLayout style="padding-left: 5%; margin-top: 5%;">
+                <span>Key takeaways:</span>
+            </div>
+            <div fxLayout style="padding-left: 5%;">
+                <p style="text-align: justify; width: 100%;">
+                    This is my first experience building a proper backend that connects to a SQL database. From this, I have learned
+                    to build APIs which frontend clients can call upon to retrieve data from a database, and it had set the foundation
+                    for me to build web applications.
+                </p>
+            </div>
+            <div style="text-align: center">
+                <button
+                    mat-flat-button 
+                    style="
+                        margin-top: 2%; 
+                        margin-left: 5%; 
+                        border: 1px solid; 
+                        color: #000080;
+                        width: 50%;
+                        " 
+                    (click)="handleMerlionAirlines()"
+                >
+                    GITHUB REPOSITORY
+                </button>
+            </div>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start" style="padding: 2% 25% 0 25%">
+            <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
+                <img src="../../../assets/pictures/orbital-removebg-preview.png" style="height: 100px; width: 100px;"/>
+                <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
+                    <h4>2020 May - 2020 Aug</h4>
+                    <h4 style="font-weight: 200;">NUS Orbital - PerFit!</h4>
+                    <span>Application Developer</span>
+                </div>
+            </div>
+            <div fxLayout style="padding-left: 8%; margin-top: 5%">
+                <ul>
+                    <li>Worked in a team of 2.</li>
+                    <li>Designed a mobile application from scratch.</li>
+                    <li>Built using Flutter and Firebase.</li>
+                    <li>Integrated with Cloud Firestore for storage.</li>
+                </ul>
+            </div>
+            <div fxLayout style="padding-left: 5%; margin-top: 5%;">
+                <span>Key takeaways:</span>
+            </div>
+            <div fxLayout style="padding-left: 5%;">
+                <p style="text-align: justify; width: 100%;">
+                    This is my first experience building an application. It is mostly independent learning of the
+                    technology stack that we have decided to utilise for the project. This was a huge stepping stone
+                    as it helped me to have an impression of building a usable application which led me to have the
+                    confidence to pick up other frameworks and technologies.
+                </p>
+            </div>
+            <div style="text-align: center">
+                <button
+                    mat-flat-button 
+                    style="
+                        margin-top: 2%; 
+                        margin-left: 5%; 
+                        border: 1px solid; 
+                        color: #000080;
+                        width: 50%;
+                        " 
+                    (click)="handlePerFit()"
+                >
+                    GITHUB REPOSITORY
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section style="text-align: center;" id="contributions">
+        <h1>Clubs & Societies</h1>
+        <div fxLayout="column" fxLayoutAlign="start" style="padding: 2% 25% 0 25%">
+            <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
+                <img src="../../../assets/pictures/65974626_10156646620062831_3251377997843791872_n-removebg-preview.png" style="height: 100px; width: 100px;"/>
+                <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
+                    <h4>2020 Feb - 2020 Aug</h4>
+                    <h4 style="font-weight: 200;">NUS Entrepreneurship Society</h4>
+                    <span>Executive of Start-Up Relations</span>
+                </div>
+            </div>
+            <div fxLayout style="padding-left: 5%; margin-top: 5%;">
+                <span>Experience:</span>
+            </div>
+            <div fxLayout style="padding-left: 5%;">
+                <p style="text-align: justify; width: 100%;">
+                    Reached out to startup founders on LinkedIn and arranged physical meetings with them. Purpose of doing so was to
+                    invite them as mentors for students who are interested in entrepreneurship. Through this, I gained more
+                    confidence to speak with people that I am not familiar with and it has helped to improve my social skills.
+                </p>
+            </div>
+            <div fxLayout="row" fxLayoutGap="2%" style="padding-left: 5%;">
+                <button
+                    mat-icon-button
+                    style="height: 4%; width: 4%"
+                    (click)="handleNESinsta()"
+                >
+                    <img src="../../../assets/pictures/insta-icon.svg"/>
+                </button>
+                <button
+                mat-icon-button
+                style="height: 4%; width: 4%"
+                (click)="handleNESfb()"
+            >
+                <img src="../../../assets/pictures/fb-icon.svg"/>
+            </button>
+            </div>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start" style="padding: 2% 25% 0 25%">
+            <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
+                <img src="../../../assets/pictures/comclub-removebg-preview.png" style="height: 100px; width: 100px;"/>
+                <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
+                    <h4>2019 Sept - 2020 Aug</h4>
+                    <h4 style="font-weight: 200;">NUS Computing Club</h4>
+                    <span>Deputy Director of Student Relations</span>
+                </div>
+            </div>
+            <div fxLayout style="padding-left: 5%; margin-top: 5%;">
+                <span>Experience:</span>
+            </div>
+            <div fxLayout style="padding-left: 5%;">
+                <p style="text-align: justify; width: 100%;">
+                    Led a team to plan an event for the School of Computing. The event was held on 2 separate days with 2 different
+                    activities: Escape Room, Amazing Race. Purpose of the event was to forge new friendships amongst the local and
+                    international students. I had to be meticulous in planning as there were many different moving parts and I did
+                    not want the event to be a failure. The event was a success and was even held again in the following year, organised
+                    by the next person who took over my position.
+                </p>
+            </div>
+            <div fxLayout="row" fxLayoutGap="2%" style="padding-left: 5%;">
+                <button
+                    mat-icon-button
+                    style="height: 4%; width: 4%"
+                    (click)="handleComClubinsta()"
+                >
+                    <img src="../../../assets/pictures/insta-icon.svg"/>
+                </button>
+                <button
+                mat-icon-button
+                style="height: 4%; width: 4%"
+                (click)="handleComClubfb()"
+            >
+                <img src="../../../assets/pictures/fb-icon.svg"/>
+            </button>
+            </div>
+        </div>
+    </section>
+
+    <section style="text-align: center" id="education">
+        <h1>Education</h1>
+
+        <mgl-timeline style="margin: 5% 10% 0 10%">
+
+            <mgl-timeline-entry>
+                <mgl-timeline-entry-header fxLayout fxLayoutAlign="center center">
+                    <img src="../../../assets/pictures/nus-logo.png" style="height: 50px; width: 50px;"/>
+                    National University of Singapore
+                </mgl-timeline-entry-header>
+                <mgl-timeline-entry-content fxLayout fxLayoutAlign="center center">
+                    <div style="margin: 150px 0 150px 0">
+                        <h6>Relevant modules taken:</h6>
+                        <ul>
+                            <li>Programming Methodology</li>
+                            <li>Programming Methodology II</li>
+                            <li>Independent Software Development Project</li>
+                            <li>Data Structures And Algorithms</li>
+                            <li>Enterprise Systems Server-side Design And Development</li>
+                            <li>Database Systems</li>
+                            <li>Enterprise Systems Interface Design And Development</li>
+                        </ul>
+                    </div>
+                </mgl-timeline-entry-content>
+                <mgl-timeline-entry-side>
+                    <div style="margin-bottom: 10px;">
+                        2019 Aug - Present
+                    </div>
+                    <div id="nus-data">
+                        Bachelor of Computing (Honours) in Information Systems
+                        <br>
+                        Cumulative Average Point: 4.45/5.00
+                    </div>
+                </mgl-timeline-entry-side>
+            </mgl-timeline-entry>
+
+            <mgl-timeline-entry style="margin-top: 100px;">
+                <mgl-timeline-entry-header fxLayout fxLayoutAlign="center center">
+                    <img src="../../../assets/pictures/cjc-logo.png" style="height: 50px; width: 50px;"/>
+                    Catholic Junior College
+                </mgl-timeline-entry-header>
+                <mgl-timeline-entry-content fxLayout fxLayoutAlign="center center">
+                    <div style="margin: 60px 0 60px 0">
+                        <h6>Co-curricular activities:</h6>
+                        <div id="cj-cca">Represented the school in a National Volleyball competition.</div>
+                    </div>
+                </mgl-timeline-entry-content>
+                <mgl-timeline-entry-side>
+                    <div style="margin-bottom: 10px;">
+                        2015 Jan - 2016 Dec
+                    </div>
+                    <div id="nus-data">
+                        Singapore-Cambridge General Certificate of Education Advanced Level
+                        <br>
+                        Subjects taken: Physics, Chemistry, Economics, Mathematics
+                    </div>
+                </mgl-timeline-entry-side>
+            </mgl-timeline-entry>
+
+        </mgl-timeline>
+    </section>
+
+    <section style="text-align: center; height: 1000px; margin-top: 50px; padding-top: 0; background-image: url('../../../assets/pictures/mountain.jpeg'); background-size: cover;" id="skills">
+        <div fxLayout fxLayoutAlign="center center" style="display: block; background-color:rgba(0, 0, 139, 0.3); color: white; height: 50px;">
+            <h1>Skillsets</h1>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="5%" style="margin-top: 50px;">
+            <div style="height: 850px; width: 500px; background-color: rgba(93, 63, 211, 0.2);">
+                <h2 class="skills-header">Technical Skills</h2>
+                <div class="skills-rating" fxLayout="column" fxLayoutGap="4%">
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">HTML</span>
+                        <div *ngFor="let number of [1,2,3,4,5]"><span class="dot-filled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">CSS</span>
+                        <div *ngFor="let number of [1,2,3,4]"><span class="dot-filled"></span></div>
+                        <div><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">JSP Technology</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">NodeJS</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Firebase</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Angular</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Vue.js</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Ionic</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Flutter</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">MySQL DBMS</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">SQL</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">PostgreSQL</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">JPQL</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Django</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">AWS</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Fauna</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">GraphQL</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Java</span>
+                        <div *ngFor="let number of [1,2,3,4,5]"><span class="dot-filled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Python</span>
+                        <div *ngFor="let number of [1,2,3,4]"><span class="dot-filled"></span></div>
+                        <div><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Javascript</span>
+                        <div *ngFor="let number of [1,2,3,4]"><span class="dot-filled"></span></div>
+                        <div><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Dart</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+                </div>
+            </div>
+            <div style="height: 850px; width: 500px; background-color: rgba(93, 63, 211, 0.2);">
+                <h2 class="skills-header">Non-Technical Skills</h2>
+                <div class="skills-rating" fxLayout="column" fxLayoutGap="4%">
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Microsoft Word</span>
+                        <div *ngFor="let number of [1,2,3,4,5]"><span class="dot-filled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Microsoft Powerpoint</span>
+                        <div *ngFor="let number of [1,2,3,4,5]"><span class="dot-filled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">InVideo</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">IMovie</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Project Management</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
-<section fxLayout fxLayoutAlign="center center" style="height: 100%; background-image: url(../../../assets/pictures/bg.gif); background-size: cover;">
-    <div style="width: 50%; height: 70%; background-color: rgba(0,0,0,0.6); position: relative;">
-        <div fxLayout="row">
-            <img src="../../../assets/pictures/profile.jpg" style="position: absolute; width: 40%; height: 100%; object-fit: cover;"/>
-            <div fxLayout="column" style="margin-left: 40%; color: white; padding: 5% 5% 10% 5%">
-                <h2>Anthony Xavier Poh</h2>
-                <h5 class="h5-with-weight">Information Systems undergraduate at National University of Singapore</h5>
-                <h5 style="margin-top: 10%;">Phone:</h5>
-                <h5 class="h5-with-weight">+65 9128 9981</h5>
-                <h5 style="margin-top: 6%;">Email:</h5>
-                <h5 class="h5-with-weight">anthonyxavier64@gmail.com</h5>
-                <h5 style="margin-top: 6%;">Date of Birth:</h5>
-                <h5 class="h5-with-weight">May 11th, 1998</h5>
-                <button mat-button style="margin-top: 10%; background-color:rgba(242,241,239,0.3);" (click)="handleDownloadResume()">DOWNLOAD MY RESUME</button>
-            </div>
+<div class="mobile">
+    <div style="position: fixed; top: 0px; z-index: 1;" class="banner">
+        <div fxLayout="row" fxLayoutGap="10%" fxLayoutAlign=" center" style="font-size: 14px;">
+            <a style="white-space: nowrap" (click)="scrollIntoView('experience')">Experience</a>
+            <a (click)="scrollIntoView('contributions')">Clubs</a>
+            <a (click)="scrollIntoView('education')">Education</a>
+            <a (click)="scrollIntoView('skills')">Skillsets</a>
         </div>
     </div>
-</section>
 
-<section fxLayout="column" fxLayoutAlign=" center" id="about">
-    <h1>Hey there, I'm Anthony.</h1>
-    <h3>Who am I</h3>
-    <p>
-        I am an undergraduate pursuing a bachelor's degree in Information Systems. My interest in Information Systems stems from
-        the ability to use technology in helping companies stay relevant in the digital age. I have a strong inclination to pick up
-        new technologies in the IT industry as they are the enablers of innovation and we can use them to work on our ideas. I have
-        worked on projects in a team setting and am always open to new projects to work on.
-    </p>
-    <h3>What I am able to offer</h3>
-    <p>
-        Being a self-driven individual, I will get tasks completed in a timely fashion. Apart from academics, I am also working
-        on my side projects such as a dropshipping store and a homemade candle business. Juggling all these together has made me
-        a disciplined individual who can get things done. Overtime I have harnessed the quality of being an independent learner.
-        I take pride in my work and thus I do my tasks meticulously. I am also approachable and form relationships with others easily.
-    </p>
-    <h3>What I am looking for</h3>
-    <p>
-        I am seeking a full-time internship at San Francisco, California, from January 2022 onwards. I am interested the domain of
-        software engineering, preferably full-stack, in a startup. Having the opportunity to work closely with the founders would 
-        be a fantastic bonus.
-    </p>
-    <button mat-flat-button style="margin-top: 2%; border: 1px solid; color: #000080" (click)="handleDownloadResume()">
-        GET MY RESUME TO LEARN MORE ABOUT ME
-    </button>
-</section>
+    <section fxLayout fxLayoutAlign="center center" style="height: 100%; background-image: url(../../../assets/pictures/bg.gif); background-size: cover;">
+        <div style="width: 100%; height: 400px; background-color: rgba(0,0,0,0.6); position: relative;">
+            <div fxLayout="row">
+                <div fxLayout="column" style="color: white; padding: 5% 5% 10% 5%">
+                    <h2>Anthony Xavier Poh</h2>
+                    <h5 class="h5-with-weight">Information Systems undergraduate at National University of Singapore</h5>
+                    <h5 style="margin-top: 10%;">Phone:</h5>
+                    <h5 class="h5-with-weight">+65 9128 9981</h5>
+                    <h5 style="margin-top: 6%;">Email:</h5>
+                    <h5 class="h5-with-weight">anthonyxavier64@gmail.com</h5>
+                    <h5 style="margin-top: 6%;">Date of Birth:</h5>
+                    <h5 class="h5-with-weight">May 11th, 1998</h5>
+                    <button mat-button style="margin-top: 10%; background-color:rgba(242,241,239,0.3);" (click)="handleDownloadResume()">DOWNLOAD MY RESUME</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section style="text-align: center;" id="experience">
-    <h1>Experience & Projects</h1>        
-    <div fxLayout="column" fxLayoutAlign="start" style="padding: 2% 25% 0 25%">
-        <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
-            <img src="../../../assets/pictures/kollabpal.png" style="height: 100px; width: 100px;"/>
-            <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
-                <h4>2021 May - 2021 Aug</h4>
-                <h4 style="font-weight: 200;">Kollabpal</h4>
-                <span>Software Engineer Intern</span>
-            </div>
-        </div>
-        <div fxLayout style="padding-left: 8%; margin-top: 5%">
-            <ul>
-                <li>Worked closely with the CTO to develop features on the frontend and backend.</li>
-                <li>Developed features on the frontend using Vue.js framework.</li>
-                <li>Hands on with the following AWS services: Lambda, SNS, SES, S3, CloudFormation.</li>
-                <li>Queried from Fauna database with GraphQL.</li>
-                <li>Create mutations and indices on Fauna.</li>
-                <li>Developed some features of the application's chat with Twilio library.</li>
-            </ul>
-        </div>
-        <div fxLayout style="padding-left: 5%; margin-top: 5%;">
-            <span>Key takeaways:</span>
-        </div>
-        <div fxLayout style="padding-left: 5%;">
-            <p style="text-align: justify; width: 100%;">
-                During my stint at Kollabpal, I managed to pick up many different technology by having a hands on experience.
-                Most of the time, the CTO would explain my task to me before letting me embark on it independently.
-                With a proper explanation, I know what is to be expected and I would complete the tasks with little further
-                guidance. This has taught me to source for resources and documentations online when I encounter issues along
-                doing my job. It has also aid me in picking up new technologies on my own.
-            </p>
-        </div>
-        <div style="text-align: center">
-            <button
-                mat-flat-button 
-                style="
-                    margin-top: 2%; 
-                    margin-left: 5%; 
-                    border: 1px solid; 
-                    color: #000080;
-                    width: 50%;
-                    " 
-                (click)="handleKollabpalTestimonial()"
-            >
-                TESTIMONIAL
-            </button>
-        </div>
-    </div>
-    <div fxLayout="column" fxLayoutAlign="start" style="padding: 2% 25% 0 25%">
-        <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
-            <img src="../../../assets/pictures/hackandroll.svg" style="height: 100px; width: 100px;"/>
-            <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
-                <h4>2021 Jan</h4>
-                <h4 style="font-weight: 200;">Hack&Roll 2021</h4>
-                <span>Application Developer</span>
-            </div>
-        </div>
-        <div fxLayout style="padding-left: 8%; margin-top: 5%">
-            <ul>
-                <li>Built frontend with Flutter.</li>
-                <li>Integrated frontend with Firebase and Cloud Firestore.</li>
-                <li>Built frontend registration page with proper authentication.</li>
-                <li>Queried data from Cloud Firestore.</li>
-            </ul>
-        </div>
-        <div fxLayout style="padding-left: 5%; margin-top: 5%;">
-            <span>Key takeaways:</span>
-        </div>
-        <div fxLayout style="padding-left: 5%;">
-            <p style="text-align: justify; width: 100%;">
-                Re-visit Flutter framework and gained a better understanding of doing a proper authentication.
-            </p>
-        </div>
-        <div style="text-align: center">
-            <button
-                mat-flat-button 
-                style="
-                    margin-top: 2%; 
-                    margin-left: 5%; 
-                    border: 1px solid; 
-                    color: #000080;
-                    width: 50%;
-                    " 
-                (click)="handleHackAndRoll()"
-            >
-                GITHUB REPOSITORY
-            </button>
-        </div>
-    </div>
-    <div fxLayout="column" fxLayoutAlign="start" style="padding: 2% 25% 0 25%">
-        <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
-            <img src="../../../assets/pictures/pmlogo-removebg-preview.png" style="height: 100px; width: 100px;"/>
-            <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
-                <h4>2021 Jan - 2021 May</h4>
-                <h4 style="font-weight: 200;">PerfectMatch</h4>
-                <span>Full-Stack Developer</span>
-            </div>
-        </div>
-        <div fxLayout style="padding-left: 8%; margin-top: 5%">
-            <ul>
-                <li>Worked in a team of 4.</li>
-                <li>3-tier architecture: frontend client, backend, database.</li>
-                <li>Built backend with J2EE.</li>
-                <li>Built frontend with Angular.</li>
-                <li>Queried from MySQL database using Java Persistence Query Language (JPQL).</li>
-            </ul>
-        </div>
-        <div fxLayout style="padding-left: 5%; margin-top: 5%;">
-            <span>Key takeaways:</span>
-        </div>
-        <div fxLayout style="padding-left: 5%;">
-            <p style="text-align: justify; width: 100%;">
-                First proper experience working in a team to build a full-stack application over the course of a 4 months.
-                Working on a multi-tier architecture has helped me to appreciate building the frontend and backend independently.
-                This is also the first time I am working with a frontend framework, and since then, it has been easier to pick up
-                other frontend frameworks such as Vue.js.
-            </p>
-        </div>
-        <div style="text-align: center">
-            <button
-                mat-flat-button 
-                style="
-                    margin-top: 2%; 
-                    margin-left: 5%; 
-                    border: 1px solid; 
-                    color: #000080;
-                    width: 50%;
-                    " 
-                (click)="handlePMFrontend()"
-            >
-                FRONTEND GITHUB REPOSITORY
-            </button>
-            <button
-                mat-flat-button 
-                style="
-                    margin-top: 2%; 
-                    margin-left: 5%; 
-                    border: 1px solid; 
-                    color: #000080;
-                    width: 50%;
-                    " 
-                (click)="handlePMBackend()"
-            >
-                BACKEND GITHUB REPOSITORY
-            </button>
-        </div>
-    </div>
-    <div fxLayout="column" fxLayoutAlign="start" style="padding: 2% 25% 0 25%">
-        <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
-            <img src="../../../assets/pictures/resources_lionheadhighres-removebg-preview.png" style="height: 100px; width: 100px;"/>
-            <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
-                <h4>2020 Aug - 2020 Nov</h4>
-                <h4 style="font-weight: 200;">Merlion Airlines</h4>
-                <span>Backend Developer</span>
-            </div>
-        </div>
-        <div fxLayout style="padding-left: 8%; margin-top: 5%">
-            <ul>
-                <li>Worked in a team of 2.</li>
-                <li>Developed an application to book flights using J2EE.</li>
-                <li>Queried from MySQL using JPQL.</li>
-            </ul>
-        </div>
-        <div fxLayout style="padding-left: 5%; margin-top: 5%;">
-            <span>Key takeaways:</span>
-        </div>
-        <div fxLayout style="padding-left: 5%;">
-            <p style="text-align: justify; width: 100%;">
-                This is my first experience building a proper backend that connects to a SQL database. From this, I have learned
-                to build APIs which frontend clients can call upon to retrieve data from a database, and it had set the foundation
-                for me to build web applications.
-            </p>
-        </div>
-        <div style="text-align: center">
-            <button
-                mat-flat-button 
-                style="
-                    margin-top: 2%; 
-                    margin-left: 5%; 
-                    border: 1px solid; 
-                    color: #000080;
-                    width: 50%;
-                    " 
-                (click)="handleMerlionAirlines()"
-            >
-                GITHUB REPOSITORY
-            </button>
-        </div>
-    </div>
-    <div fxLayout="column" fxLayoutAlign="start" style="padding: 2% 25% 0 25%">
-        <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
-            <img src="../../../assets/pictures/orbital-removebg-preview.png" style="height: 100px; width: 100px;"/>
-            <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
-                <h4>2020 May - 2020 Aug</h4>
-                <h4 style="font-weight: 200;">NUS Orbital - PerFit!</h4>
-                <span>Application Developer</span>
-            </div>
-        </div>
-        <div fxLayout style="padding-left: 8%; margin-top: 5%">
-            <ul>
-                <li>Worked in a team of 2.</li>
-                <li>Designed a mobile application from scratch.</li>
-                <li>Built using Flutter and Firebase.</li>
-                <li>Integrated with Cloud Firestore for storage.</li>
-            </ul>
-        </div>
-        <div fxLayout style="padding-left: 5%; margin-top: 5%;">
-            <span>Key takeaways:</span>
-        </div>
-        <div fxLayout style="padding-left: 5%;">
-            <p style="text-align: justify; width: 100%;">
-                This is my first experience building an application. It is mostly independent learning of the
-                technology stack that we have decided to utilise for the project. This was a huge stepping stone
-                as it helped me to have an impression of building a usable application which led me to have the
-                confidence to pick up other frameworks and technologies.
-            </p>
-        </div>
-        <div style="text-align: center">
-            <button
-                mat-flat-button 
-                style="
-                    margin-top: 2%; 
-                    margin-left: 5%; 
-                    border: 1px solid; 
-                    color: #000080;
-                    width: 50%;
-                    " 
-                (click)="handlePerFit()"
-            >
-                GITHUB REPOSITORY
-            </button>
-        </div>
-    </div>
-</section>
-
-<section style="text-align: center;" id="contributions">
-    <h1>Clubs & Societies</h1>
-    <div fxLayout="column" fxLayoutAlign="start" style="padding: 2% 25% 0 25%">
-        <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
-            <img src="../../../assets/pictures/65974626_10156646620062831_3251377997843791872_n-removebg-preview.png" style="height: 100px; width: 100px;"/>
-            <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
-                <h4>2020 Feb - 2020 Aug</h4>
-                <h4 style="font-weight: 200;">NUS Entrepreneurship Society</h4>
-                <span>Executive of Start-Up Relations</span>
-            </div>
-        </div>
-        <div fxLayout style="padding-left: 5%; margin-top: 5%;">
-            <span>Experience:</span>
-        </div>
-        <div fxLayout style="padding-left: 5%;">
-            <p style="text-align: justify; width: 100%;">
-                Reached out to startup founders on LinkedIn and arranged physical meetings with them. Purpose of doing so was to
-                invite them as mentors for students who are interested in entrepreneurship. Through this, I gained more
-                confidence to speak with people that I am not familiar with and it has helped to improve my social skills.
-            </p>
-        </div>
-        <div fxLayout="row" fxLayoutGap="2%" style="padding-left: 5%;">
-            <button
-                mat-icon-button
-                style="height: 4%; width: 4%"
-                (click)="handleNESinsta()"
-            >
-                <img src="../../../assets/pictures/insta-icon.svg"/>
-            </button>
-            <button
-            mat-icon-button
-            style="height: 4%; width: 4%"
-            (click)="handleNESfb()"
-        >
-            <img src="../../../assets/pictures/fb-icon.svg"/>
+    <section fxLayout="column" fxLayoutGap="10px" fxLayoutAlign=" center" id="about" style="padding: 0 10px 0 10px">
+        <h1>Hey there, I'm Anthony.</h1>
+        <h3>Who am I</h3>
+        <p>
+            I am an undergraduate pursuing a bachelor's degree in Information Systems. My interest in Information Systems stems from
+            the ability to use technology in helping companies stay relevant in the digital age. I have a strong inclination to pick up
+            new technologies in the IT industry as they are the enablers of innovation and we can use them to work on our ideas. I have
+            worked on projects in a team setting and am always open to new projects to work on.
+        </p>
+        <h3>What I am able to offer</h3>
+        <p>
+            Being a self-driven individual, I will get tasks completed in a timely fashion. Apart from academics, I am also working
+            on my side projects such as a dropshipping store and a homemade candle business. Juggling all these together has made me
+            a disciplined individual who can get things done. Overtime I have harnessed the quality of being an independent learner.
+            I take pride in my work and thus I do my tasks meticulously. I am also approachable and form relationships with others easily.
+        </p>
+        <h3>What I am looking for</h3>
+        <p>
+            I am seeking a full-time internship at San Francisco, California, from January 2022 onwards. I am interested the domain of
+            software engineering, preferably full-stack, in a startup. Having the opportunity to work closely with the founders would 
+            be a fantastic bonus.
+        </p>
+        <button mat-flat-button style="margin-top: 2%; border: 1px solid; color: #000080" (click)="handleDownloadResume()">
+            GET MY RESUME TO LEARN MORE ABOUT ME
         </button>
-        </div>
-    </div>
-    <div fxLayout="column" fxLayoutAlign="start" style="padding: 2% 25% 0 25%">
-        <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
-            <img src="../../../assets/pictures/comclub-removebg-preview.png" style="height: 100px; width: 100px;"/>
-            <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
-                <h4>2019 Sept - 2020 Aug</h4>
-                <h4 style="font-weight: 200;">NUS Computing Club</h4>
-                <span>Deputy Director of Student Relations</span>
-            </div>
-        </div>
-        <div fxLayout style="padding-left: 5%; margin-top: 5%;">
-            <span>Experience:</span>
-        </div>
-        <div fxLayout style="padding-left: 5%;">
-            <p style="text-align: justify; width: 100%;">
-                Led a team to plan an event for the School of Computing. The event was held on 2 separate days with 2 different
-                activities: Escape Room, Amazing Race. Purpose of the event was to forge new friendships amongst the local and
-                international students. I had to be meticulous in planning as there were many different moving parts and I did
-                not want the event to be a failure. The event was a success and was even held again in the following year, organised
-                by the next person who took over my position.
-            </p>
-        </div>
-        <div fxLayout="row" fxLayoutGap="2%" style="padding-left: 5%;">
-            <button
-                mat-icon-button
-                style="height: 4%; width: 4%"
-                (click)="handleComClubinsta()"
-            >
-                <img src="../../../assets/pictures/insta-icon.svg"/>
-            </button>
-            <button
-            mat-icon-button
-            style="height: 4%; width: 4%"
-            (click)="handleComClubfb()"
-        >
-            <img src="../../../assets/pictures/fb-icon.svg"/>
-        </button>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section style="text-align: center" id="education">
-    <h1>Education</h1>
-
-    <!-- <div class="timeline-container">
-        <div class="event">
-            <div class="event-date">
-                Aug 2019
+    <section fxLayoutGap="40px" fxLayout="column" style="text-align: center; margin-top: 50px;" id="experience">
+        <h1>Experience & Projects</h1>        
+        <div fxLayout="column" fxLayoutAlign="start" style="padding-right: 15px; padding-left: 10px;">
+            <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
+                <img src="../../../assets/pictures/kollabpal.png" style="height: 100px; width: 100px;"/>
+                <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
+                    <h4>2021 May - 2021 Aug</h4>
+                    <h4 style="font-weight: 200;">Kollabpal</h4>
+                    <span>Software Engineer Intern</span>
+                </div>
             </div>
-            <h2>National University of Singapore</h2>
-            <div class="timeline-content">
-                <p>
-                    some paragraph
+            <div fxLayout style="padding-left: 8%; margin-top: 5%">
+                <ul>
+                    <li>Worked closely with the CTO to develop features on the frontend and backend.</li>
+                    <li>Developed features on the frontend using Vue.js framework.</li>
+                    <li>Hands on with the following AWS services: Lambda, SNS, SES, S3, CloudFormation.</li>
+                    <li>Queried from Fauna database with GraphQL.</li>
+                    <li>Create mutations and indices on Fauna.</li>
+                    <li>Developed some features of the application's chat with Twilio library.</li>
+                </ul>
+            </div>
+            <div fxLayout style="padding-left: 5%; margin-top: 5%;">
+                <span>Key takeaways:</span>
+            </div>
+            <div fxLayout style="padding-left: 5%;">
+                <p style="text-align: justify; width: 100%;">
+                    During my stint at Kollabpal, I managed to pick up many different technology by having a hands on experience.
+                    Most of the time, the CTO would explain my task to me before letting me embark on it independently.
+                    With a proper explanation, I know what is to be expected and I would complete the tasks with little further
+                    guidance. This has taught me to source for resources and documentations online when I encounter issues along
+                    doing my job. It has also aid me in picking up new technologies on my own.
                 </p>
             </div>
-        </div>
-
-        <div class="event">
-            <div class="event-date">
-                Aug 2019
+            <div style="text-align: center">
+                <button
+                    mat-flat-button 
+                    style="
+                        margin-top: 2%; 
+                        margin-left: 5%; 
+                        border: 1px solid; 
+                        color: #000080;
+                        width: 50%;
+                        " 
+                    (click)="handleKollabpalTestimonial()"
+                >
+                    TESTIMONIAL
+                </button>
             </div>
-            <h2>National University of Singapore</h2>
-            <div class="timeline-content">
-                <p>
-                    some paragraph
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start" style="padding-right: 15px; padding-left: 10px;">
+            <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
+                <img src="../../../assets/pictures/hackandroll.svg" style="height: 100px; width: 100px;"/>
+                <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
+                    <h4>2021 Jan</h4>
+                    <h4 style="font-weight: 200;">Hack&Roll 2021</h4>
+                    <span>Application Developer</span>
+                </div>
+            </div>
+            <div fxLayout style="padding-left: 8%; margin-top: 5%">
+                <ul>
+                    <li>Built frontend with Flutter.</li>
+                    <li>Integrated frontend with Firebase and Cloud Firestore.</li>
+                    <li>Built frontend registration page with proper authentication.</li>
+                    <li>Queried data from Cloud Firestore.</li>
+                </ul>
+            </div>
+            <div fxLayout style="padding-left: 5%; margin-top: 5%;">
+                <span>Key takeaways:</span>
+            </div>
+            <div fxLayout style="padding-left: 5%;">
+                <p style="text-align: justify; width: 100%;">
+                    Re-visit Flutter framework and gained a better understanding of doing a proper authentication.
                 </p>
             </div>
-        </div>
-    </div> -->
-
-    <mgl-timeline style="margin: 5% 10% 0 10%">
-
-        <mgl-timeline-entry>
-            <mgl-timeline-entry-header fxLayout fxLayoutAlign="center center">
-                <img src="../../../assets/pictures/nus-logo.png" style="height: 50px; width: 50px;"/>
-                National University of Singapore
-            </mgl-timeline-entry-header>
-            <mgl-timeline-entry-content fxLayout fxLayoutAlign="center center">
-                <div style="margin: 150px 0 150px 0">
-                    <h6>Relevant modules taken:</h6>
-                    <ul>
-                        <li>Programming Methodology</li>
-                        <li>Programming Methodology II</li>
-                        <li>Independent Software Development Project</li>
-                        <li>Data Structures And Algorithms</li>
-                        <li>Enterprise Systems Server-side Design And Development</li>
-                        <li>Database Systems</li>
-                        <li>Enterprise Systems Interface Design And Development</li>
-                    </ul>
-                </div>
-            </mgl-timeline-entry-content>
-            <mgl-timeline-entry-side>
-                <div style="margin-bottom: 10px;">
-                    2019 Aug - Present
-                </div>
-                <div id="nus-data">
-                    Bachelor of Computing (Honours) in Information Systems
-                    <br>
-                    Cumulative Average Point: 4.45/5.00
-                </div>
-            </mgl-timeline-entry-side>
-        </mgl-timeline-entry>
-
-        <mgl-timeline-entry style="margin-top: 100px;">
-            <mgl-timeline-entry-header fxLayout fxLayoutAlign="center center">
-                <img src="../../../assets/pictures/cjc-logo.png" style="height: 50px; width: 50px;"/>
-                Catholic Junior College
-            </mgl-timeline-entry-header>
-            <mgl-timeline-entry-content fxLayout fxLayoutAlign="center center">
-                <div style="margin: 60px 0 60px 0">
-                    <h6>Co-curricular activities:</h6>
-                    <div id="cj-cca">Represented the school in a National Volleyball competition.</div>
-                </div>
-            </mgl-timeline-entry-content>
-            <mgl-timeline-entry-side>
-                <div style="margin-bottom: 10px;">
-                    2015 Jan - 2016 Dec
-                </div>
-                <div id="nus-data">
-                    Singapore-Cambridge General Certificate of Education Advanced Level
-                    <br>
-                    Subjects taken: Physics, Chemistry, Economics, Mathematics
-                </div>
-            </mgl-timeline-entry-side>
-        </mgl-timeline-entry>
-
-    </mgl-timeline>
-</section>
-
-<section style="text-align: center; height: 1000px; margin-top: 50px; padding-top: 0; background-image: url('../../../assets/pictures/mountain.jpeg'); background-size: cover;" id="skills">
-    <div fxLayout fxLayoutAlign="center center" style="display: block; background-color:rgba(0, 0, 139, 0.3); color: white; height: 50px;">
-        <h1>Skillsets</h1>
-    </div>
-
-    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="5%" style="margin-top: 50px;">
-        <div style="height: 850px; width: 500px; background-color: rgba(93, 63, 211, 0.2);">
-            <h2 class="skills-header">Technical Skills</h2>
-            <div class="skills-rating" fxLayout="column" fxLayoutGap="4%">
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">HTML</span>
-                    <div *ngFor="let number of [1,2,3,4,5]"><span class="dot-filled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">CSS</span>
-                    <div *ngFor="let number of [1,2,3,4]"><span class="dot-filled"></span></div>
-                    <div><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">JSP Technology</span>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">NodeJS</span>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">Firebase</span>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">Angular</span>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">Vue.js</span>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">Ionic</span>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">Flutter</span>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">MySQL DBMS</span>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">SQL</span>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">PostgreSQL</span>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">JPQL</span>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">Django</span>
-                    <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">AWS</span>
-                    <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">Fauna</span>
-                    <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">GraphQL</span>
-                    <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">Java</span>
-                    <div *ngFor="let number of [1,2,3,4,5]"><span class="dot-filled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">Python</span>
-                    <div *ngFor="let number of [1,2,3,4]"><span class="dot-filled"></span></div>
-                    <div><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">Javascript</span>
-                    <div *ngFor="let number of [1,2,3,4]"><span class="dot-filled"></span></div>
-                    <div><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">Dart</span>
-                    <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
-                </span>
+            <div style="text-align: center">
+                <button
+                    mat-flat-button 
+                    style="
+                        margin-top: 2%; 
+                        margin-left: 5%; 
+                        border: 1px solid; 
+                        color: #000080;
+                        width: 50%;
+                        " 
+                    (click)="handleHackAndRoll()"
+                >
+                    GITHUB REPOSITORY
+                </button>
             </div>
         </div>
-        <div style="height: 850px; width: 500px; background-color: rgba(93, 63, 211, 0.2);">
-            <h2 class="skills-header">Non-Technical Skills</h2>
-            <div class="skills-rating" fxLayout="column" fxLayoutGap="4%">
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">Microsoft Word</span>
-                    <div *ngFor="let number of [1,2,3,4,5]"><span class="dot-filled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">Microsoft Powerpoint</span>
-                    <div *ngFor="let number of [1,2,3,4,5]"><span class="dot-filled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">InVideo</span>
-                    <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">IMovie</span>
-                    <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
-                </span>
-
-                <span fxLayout="row" fxLayoutGap="3%">
-                    <span style="width: 180px">Project Management</span>
-                    <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
-                    <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
-                </span>
+        <div fxLayout="column" fxLayoutAlign="start" style="padding-right: 15px; padding-left: 10px;">
+            <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
+                <img src="../../../assets/pictures/pmlogo-removebg-preview.png" style="height: 100px; width: 100px;"/>
+                <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
+                    <h4>2021 Jan - 2021 May</h4>
+                    <h4 style="font-weight: 200;">PerfectMatch</h4>
+                    <span>Full-Stack Developer</span>
+                </div>
+            </div>
+            <div fxLayout style="padding-left: 8%; margin-top: 5%">
+                <ul>
+                    <li>Worked in a team of 4.</li>
+                    <li>3-tier architecture: frontend client, backend, database.</li>
+                    <li>Built backend with J2EE.</li>
+                    <li>Built frontend with Angular.</li>
+                    <li>Queried from MySQL database using Java Persistence Query Language (JPQL).</li>
+                </ul>
+            </div>
+            <div fxLayout style="padding-left: 5%; margin-top: 5%;">
+                <span>Key takeaways:</span>
+            </div>
+            <div fxLayout style="padding-left: 5%;">
+                <p style="text-align: justify; width: 100%;">
+                    First proper experience working in a team to build a full-stack application over the course of a 4 months.
+                    Working on a multi-tier architecture has helped me to appreciate building the frontend and backend independently.
+                    This is also the first time I am working with a frontend framework, and since then, it has been easier to pick up
+                    other frontend frameworks such as Vue.js.
+                </p>
+            </div>
+            <div style="text-align: center">
+                <button
+                    mat-flat-button 
+                    style="
+                        margin-top: 2%; 
+                        margin-left: 5%; 
+                        border: 1px solid; 
+                        color: #000080;
+                        width: 300px;
+                        " 
+                    (click)="handlePMFrontend()"
+                >
+                    FRONTEND GITHUB REPOSITORY
+                </button>
+                <button
+                    mat-flat-button 
+                    style="
+                        margin-top: 2%; 
+                        margin-left: 5%; 
+                        border: 1px solid; 
+                        color: #000080;
+                        width: 300px;
+                        " 
+                    (click)="handlePMBackend()"
+                >
+                    BACKEND GITHUB REPOSITORY
+                </button>
             </div>
         </div>
-    </div>
-</section>
+        <div fxLayout="column" fxLayoutAlign="start" style="padding-right: 15px; padding-left: 10px;">
+            <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
+                <img src="../../../assets/pictures/resources_lionheadhighres-removebg-preview.png" style="height: 100px; width: 100px;"/>
+                <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
+                    <h4>2020 Aug - 2020 Nov</h4>
+                    <h4 style="font-weight: 200;">Merlion Airlines</h4>
+                    <span>Backend Developer</span>
+                </div>
+            </div>
+            <div fxLayout style="padding-left: 8%; margin-top: 5%">
+                <ul>
+                    <li>Worked in a team of 2.</li>
+                    <li>Developed an application to book flights using J2EE.</li>
+                    <li>Queried from MySQL using JPQL.</li>
+                </ul>
+            </div>
+            <div fxLayout style="padding-left: 5%; margin-top: 5%;">
+                <span>Key takeaways:</span>
+            </div>
+            <div fxLayout style="padding-left: 5%;">
+                <p style="text-align: justify; width: 100%;">
+                    This is my first experience building a proper backend that connects to a SQL database. From this, I have learned
+                    to build APIs which frontend clients can call upon to retrieve data from a database, and it had set the foundation
+                    for me to build web applications.
+                </p>
+            </div>
+            <div style="text-align: center">
+                <button
+                    mat-flat-button 
+                    style="
+                        margin-top: 2%; 
+                        margin-left: 5%; 
+                        border: 1px solid; 
+                        color: #000080;
+                        width: 50%;
+                        " 
+                    (click)="handleMerlionAirlines()"
+                >
+                    GITHUB REPOSITORY
+                </button>
+            </div>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start" style="padding-right: 15px; padding-left: 10px;">
+            <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
+                <img src="../../../assets/pictures/orbital-removebg-preview.png" style="height: 100px; width: 100px;"/>
+                <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
+                    <h4>2020 May - 2020 Aug</h4>
+                    <h4 style="font-weight: 200;">NUS Orbital - PerFit!</h4>
+                    <span>Application Developer</span>
+                </div>
+            </div>
+            <div fxLayout style="padding-left: 8%; margin-top: 5%">
+                <ul>
+                    <li>Worked in a team of 2.</li>
+                    <li>Designed a mobile application from scratch.</li>
+                    <li>Built using Flutter and Firebase.</li>
+                    <li>Integrated with Cloud Firestore for storage.</li>
+                </ul>
+            </div>
+            <div fxLayout style="padding-left: 5%; margin-top: 5%;">
+                <span>Key takeaways:</span>
+            </div>
+            <div fxLayout style="padding-left: 5%;">
+                <p style="text-align: justify; width: 100%;">
+                    This is my first experience building an application. It is mostly independent learning of the
+                    technology stack that we have decided to utilise for the project. This was a huge stepping stone
+                    as it helped me to have an impression of building a usable application which led me to have the
+                    confidence to pick up other frameworks and technologies.
+                </p>
+            </div>
+            <div style="text-align: center">
+                <button
+                    mat-flat-button 
+                    style="
+                        margin-top: 2%; 
+                        margin-left: 5%; 
+                        border: 1px solid; 
+                        color: #000080;
+                        width: 50%;
+                        " 
+                    (click)="handlePerFit()"
+                >
+                    GITHUB REPOSITORY
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section fxLayoutGap="40px" fxLayout="column" style="text-align: center; margin-top: 50px;" id="contributions">
+        <h1>Clubs & Societies</h1>
+        <div fxLayout="column" fxLayoutAlign="start" style="padding-right: 15px; padding-left: 10px;">
+            <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
+                <img src="../../../assets/pictures/65974626_10156646620062831_3251377997843791872_n-removebg-preview.png" style="height: 100px; width: 100px;"/>
+                <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
+                    <h4>2020 Feb - 2020 Aug</h4>
+                    <h4 style="font-weight: 200;">NUS Entrepreneurship Society</h4>
+                    <span>Executive of Start-Up Relations</span>
+                </div>
+            </div>
+            <div fxLayout style="padding-left: 5%; margin-top: 5%;">
+                <span>Experience:</span>
+            </div>
+            <div fxLayout style="padding-left: 5%;">
+                <p style="text-align: justify; width: 100%;">
+                    Reached out to startup founders on LinkedIn and arranged physical meetings with them. Purpose of doing so was to
+                    invite them as mentors for students who are interested in entrepreneurship. Through this, I gained more
+                    confidence to speak with people that I am not familiar with and it has helped to improve my social skills.
+                </p>
+            </div>
+            <div fxLayout="row" fxLayoutGap="2%" style="padding-left: 5%;">
+                <button
+                    mat-icon-button
+                    style="height: 30px; width: 30px"
+                    (click)="handleNESinsta()"
+                >
+                    <img src="../../../assets/pictures/insta-icon.svg"/>
+                </button>
+                <button
+                mat-icon-button
+                style="height: 30px; width: 30px"
+                (click)="handleNESfb()"
+            >
+                <img src="../../../assets/pictures/fb-icon.svg"/>
+            </button>
+            </div>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start" style="padding-right: 15px; padding-left: 10px;">
+            <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
+                <img src="../../../assets/pictures/comclub-removebg-preview.png" style="height: 100px; width: 100px;"/>
+                <div fxLayout="column" style="text-align: justify;" fxLayoutGap="2%">
+                    <h4>2019 Sept - 2020 Aug</h4>
+                    <h4 style="font-weight: 200;">NUS Computing Club</h4>
+                    <span>Deputy Director of Student Relations</span>
+                </div>
+            </div>
+            <div fxLayout style="padding-left: 5%; margin-top: 5%;">
+                <span>Experience:</span>
+            </div>
+            <div fxLayout style="padding-left: 5%;">
+                <p style="text-align: justify; width: 100%;">
+                    Led a team to plan an event for the School of Computing. The event was held on 2 separate days with 2 different
+                    activities: Escape Room, Amazing Race. Purpose of the event was to forge new friendships amongst the local and
+                    international students. I had to be meticulous in planning as there were many different moving parts and I did
+                    not want the event to be a failure. The event was a success and was even held again in the following year, organised
+                    by the next person who took over my position.
+                </p>
+            </div>
+            <div fxLayout="row" fxLayoutGap="2%" style="padding-left: 5%;">
+                <button
+                    mat-icon-button
+                    style="height: 30px; width: 30px"
+                    (click)="handleComClubinsta()"
+                >
+                    <img src="../../../assets/pictures/insta-icon.svg"/>
+                </button>
+                <button
+                mat-icon-button
+                style="height: 30px; width: 30px"
+                (click)="handleComClubfb()"
+            >
+                <img src="../../../assets/pictures/fb-icon.svg"/>
+            </button>
+            </div>
+        </div>
+    </section>
+
+    <section style="text-align: center" id="education">
+        <h1>Education</h1>
+
+        <mgl-timeline style="margin: 5% 10% 0 10%">
+
+            <mgl-timeline-entry>
+                <mgl-timeline-entry-header fxLayout fxLayoutAlign="center center">
+                    <img src="../../../assets/pictures/nus-logo.png" style="height: 50px; width: 50px;"/>
+                    National University of Singapore
+                </mgl-timeline-entry-header>
+                <mgl-timeline-entry-content>
+                    <div>
+                        <h6>Relevant modules taken:</h6>
+                        <ul>
+                            <li>Programming Methodology</li>
+                            <li>Programming Methodology II</li>
+                            <li>Independent Software Development Project</li>
+                            <li>Data Structures And Algorithms</li>
+                            <li>Enterprise Systems Server-side Design And Development</li>
+                            <li>Database Systems</li>
+                            <li>Enterprise Systems Interface Design And Development</li>
+                        </ul>
+                    </div>
+                </mgl-timeline-entry-content>
+            </mgl-timeline-entry>
+
+            <mgl-timeline-entry style="margin-top: 100px;">
+                <mgl-timeline-entry-header fxLayout fxLayoutAlign="center center">
+                    <img src="../../../assets/pictures/cjc-logo.png" style="height: 50px; width: 50px;"/>
+                    Catholic Junior College
+                </mgl-timeline-entry-header>
+                <mgl-timeline-entry-content>
+                    <div>
+                        <h6>Co-curricular activities:</h6>
+                        <div id="cj-cca">Represented the school in a National Volleyball competition.</div>
+                    </div>
+                </mgl-timeline-entry-content>
+            </mgl-timeline-entry>
+
+        </mgl-timeline>
+    </section>
+
+    <section style="height: 1200px; margin-top: 50px; padding-top: 0; background-image: url('../../../assets/pictures/mountain.jpeg'); background-size: cover;" id="skills">
+        <div fxLayout fxLayoutAlign="center center" style="display: block; background-color:rgba(0, 0, 139, 0.3); color: white; height: 50px;">
+            <h1>Skillsets</h1>
+        </div>
+
+        <div fxLayout="column" fxLayoutAlign=" center" fxLayoutGap="5%" style="margin-top: 50px;">
+            <div style="height: 750px; width: 500px; background-color: rgba(93, 63, 211, 0.2);">
+                <h2 class="skills-header">Technical Skills</h2>
+                <div class="skills-rating" fxLayout="column" fxLayoutGap="4%">
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">HTML</span>
+                        <div *ngFor="let number of [1,2,3,4,5]"><span class="dot-filled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">CSS</span>
+                        <div *ngFor="let number of [1,2,3,4]"><span class="dot-filled"></span></div>
+                        <div><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">JSP Technology</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">NodeJS</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Firebase</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Angular</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Vue.js</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Ionic</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Flutter</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">MySQL DBMS</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">SQL</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">PostgreSQL</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">JPQL</span>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Django</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">AWS</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Fauna</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">GraphQL</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Java</span>
+                        <div *ngFor="let number of [1,2,3,4,5]"><span class="dot-filled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Python</span>
+                        <div *ngFor="let number of [1,2,3,4]"><span class="dot-filled"></span></div>
+                        <div><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Javascript</span>
+                        <div *ngFor="let number of [1,2,3,4]"><span class="dot-filled"></span></div>
+                        <div><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Dart</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+                </div>
+            </div>
+
+            <div style="height: 290px; width: 500px; background-color: rgba(93, 63, 211, 0.2);">
+                <h2 class="skills-header">Non-Technical Skills</h2>
+                <div class="skills-rating" fxLayout="column" fxLayoutGap="4%">
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Microsoft Word</span>
+                        <div *ngFor="let number of [1,2,3,4,5]"><span class="dot-filled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Microsoft Powerpoint</span>
+                        <div *ngFor="let number of [1,2,3,4,5]"><span class="dot-filled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">InVideo</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">IMovie</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+
+                    <span fxLayout="row" fxLayoutGap="3%">
+                        <span style="width: 180px">Project Management</span>
+                        <div *ngFor="let number of [1,2]"><span class="dot-filled"></span></div>
+                        <div *ngFor="let number of [1,2,3]"><span class="dot-unfilled"></span></div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
