@@ -201,6 +201,6 @@ mgl-timeline-entry-content ul {
         margin-top: 20px;
         color: white;
         position: absolute;
-        padding-right: 100px;
+        left: -60px;
     }
 }

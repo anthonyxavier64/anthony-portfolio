@@ -603,10 +603,10 @@
 <div class="mobile">
     <div style="position: fixed; top: 0px; z-index: 1;" class="banner">
         <div fxLayout="row" fxLayoutGap="10%" fxLayoutAlign=" center" style="font-size: 14px;">
-            <a style="white-space: nowrap" (click)="scrollIntoView('experience')">Experience</a>
-            <a (click)="scrollIntoView('contributions')">Clubs</a>
-            <a (click)="scrollIntoView('education')">Education</a>
-            <a (click)="scrollIntoView('skills')">Skillsets</a>
+            <a style="white-space: nowrap" (click)="scrollIntoView('m-experience')">Experience</a>
+            <a (click)="scrollIntoView('m-contributions')">Clubs</a>
+            <a (click)="scrollIntoView('m-education')">Education</a>
+            <a (click)="scrollIntoView('m-skills')">Skillsets</a>
         </div>
     </div>
 
@@ -655,7 +655,7 @@
         </button>
     </section>
 
-    <section fxLayoutGap="40px" fxLayout="column" style="text-align: center; margin-top: 50px;" id="experience">
+    <section fxLayoutGap="40px" fxLayout="column" style="text-align: center; margin-top: 50px;" id="m-experience">
         <h1>Experience & Projects</h1>        
         <div fxLayout="column" fxLayoutAlign="start" style="padding-right: 15px; padding-left: 10px;">
             <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
@@ -891,7 +891,7 @@
         </div>
     </section>
 
-    <section fxLayoutGap="40px" fxLayout="column" style="text-align: center; margin-top: 50px;" id="contributions">
+    <section fxLayoutGap="40px" fxLayout="column" style="text-align: center; margin-top: 50px;" id="m-contributions">
         <h1>Clubs & Societies</h1>
         <div fxLayout="column" fxLayoutAlign="start" style="padding-right: 15px; padding-left: 10px;">
             <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="3%">
@@ -969,7 +969,7 @@
         </div>
     </section>
 
-    <section style="text-align: center" id="education">
+    <section style="text-align: center" id="m-education">
         <h1>Education</h1>
 
         <mgl-timeline style="margin: 5% 10% 0 10%">
@@ -1011,13 +1011,13 @@
         </mgl-timeline>
     </section>
 
-    <section style="height: 1200px; margin-top: 50px; padding-top: 0; background-image: url('../../../assets/pictures/mountain.jpeg'); background-size: cover;" id="skills">
+    <section style="height: 1200px; margin-top: 50px; padding-top: 0; background-image: url('../../../assets/pictures/mountain.jpeg'); background-size: cover;" id="m-skills">
         <div fxLayout fxLayoutAlign="center center" style="display: block; background-color:rgba(0, 0, 139, 0.3); color: white; height: 50px;">
             <h1>Skillsets</h1>
         </div>
 
-        <div fxLayout="column" fxLayoutAlign=" center" fxLayoutGap="5%" style="margin-top: 50px;">
-            <div style="height: 750px; width: 500px; background-color: rgba(93, 63, 211, 0.2);">
+        <div fxLayout="column" fxLayoutGap="5%" style="margin-top: 50px;">
+            <div style="height: 750px; width: 100%; background-color: rgba(93, 63, 211, 0.2);">
                 <h2 class="skills-header">Technical Skills</h2>
                 <div class="skills-rating" fxLayout="column" fxLayoutGap="4%">
                     <span fxLayout="row" fxLayoutGap="3%">
@@ -1146,7 +1146,7 @@
                 </div>
             </div>
 
-            <div style="height: 290px; width: 500px; background-color: rgba(93, 63, 211, 0.2);">
+            <div style="height: 290px; width: 100%; background-color: rgba(93, 63, 211, 0.2);">
                 <h2 class="skills-header">Non-Technical Skills</h2>
                 <div class="skills-rating" fxLayout="column" fxLayoutGap="4%">
                     <span fxLayout="row" fxLayoutGap="3%">
