@@ -65,4 +65,8 @@ export class IndexComponent implements OnInit {
   handleComClubfb() {
     window.open("https://www.facebook.com/nuscomputing/", "_blank");
   }
+
+  handleLinkedIn() {
+    window.open("https://www.linkedin.com/in/anthony-xavier-poh-354329159/", "_blank");
+  }
 }
