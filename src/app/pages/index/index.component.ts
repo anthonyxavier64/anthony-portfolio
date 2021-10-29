@@ -23,7 +23,7 @@ export class IndexComponent implements OnInit {
   }
 
   handleDownloadResume() {
-    window.open("https://firebasestorage.googleapis.com/v0/b/anthony-portfolio-d41e3.appspot.com/o/Resume_Anthony%20Xavier%20Poh%20Tianci.pdf?alt=media&token=3e15abfb-9ded-479a-94a7-e1f0bf9e4690", "_blank");
+    window.open("https://firebasestorage.googleapis.com/v0/b/anthony-portfolio-d41e3.appspot.com/o/Resume-Anthony%20Xavier%20Poh%20Tianci.pdf?alt=media&token=33ddbb94-df17-436b-b8f8-bb7c5b2be192", "_blank");
   }
 
   handleKollabpalTestimonial() {
